@@ -5,127 +5,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
-    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/resume.css">
 
 </head>
 
 <body>
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
     <header>
-        <article class="logo">
-            <figure>
-                <img src="images/logo.jpg" width="200" height="200" alt="Girma">
-            </figure>
-            <h1>Girma E.</h1>
-        </article>
-
-        <nav class="nav-list">
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Resume.html">Resume</a></li>
-                <li><a href="Service.html">Services</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="education">
-            <h2>Education</h2>
-            <aside>
+        <div class="header-container">
+            <article class="logo">
                 <figure>
-                    <img src="images/aau.jpg" width="400" height="400" alt="AAU Building">
-                    <figcaption>
-                        Addis Ababa University: A Center of Excellence in Education and Research
-                    </figcaption>
+                    <img src="images/logo.jpg" alt="Girma">
                 </figure>
-            </aside>
-            <article>
-                <header>
+                <h1>Girma E.</h1>
+            </article>
+
+            <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">☰</button>
+
+            <nav class="nav-list" id="mobileMenu">
+                <button class="close-menu" aria-label="Close menu">✕</button>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Resume.html">Resume</a></li>
+                    <li><a href="Service.html">Services</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <body>
+        <main>
+            <section class="education">
+                <aside>
+                    <h2>Education</h2>
+                    <figure>
+                        <img src="./images/aau .jpg" alt="AAU Building">
+                        <figcaption>
+                            Addis Ababa University: A Center of Excellence in Education and Research
+                        </figcaption>
+                    </figure>
+                </aside>
+
+                <article>
                     <h3>Academic Journey</h3>
-                </header>
-                <p>
-                    I am currently pursuing a Bachelor’s degree in Software Engineering at Addis Ababa University, where I maintain a GPA of 3.88/4.0. My academic journey has provided me with a strong foundation in computer science principles, including Data Structures and
-                    Algorithms, Object-Oriented Programming, Web Development, and Database Systems.
-                </p>
-                <p>
-                    Beyond my core studies, I have completed the Cisco Networking Program (Packet Tracer), enhancing my knowledge in network design, configuration, and troubleshooting. This training, combined with my technical expertise in tools like Firebase, has prepared
-                    me to develop efficient, scalable, and innovative solutions.
-                </p>
-            </article>
-        </section>
+                    <p>
+                        I am currently pursuing a Bachelor's degree in Software Engineering at Addis Ababa University, where I maintain a GPA of 3.88/4.0. My academic journey has provided me with a strong foundation in computer science principles, including Data Structures and
+                        Algorithms, Object-Oriented Programming, Web Development, and Database Systems.
+                    </p>
+                    <p>
+                        Beyond my core studies, I have completed the Cisco Networking Program (Packet Tracer), enhancing my knowledge in network design, configuration, and troubleshooting. This training, combined with my technical expertise in tools like Firebase, has prepared
+                        me to develop efficient, scalable, and innovative solutions.
+                    </p>
+                </article>
+                <article class="download-cv">
+                    <h2>Download CV</h2>
+                    <p>
+                        Click below to download my CV and explore my academic background, skills, and professional experiences.
+                    </p>
+                    <a href="resume/cv.pdf" download>Download My CV</a>
+                </article>
+            </section>
 
-        <section class="skills">
-            <h2>Skills</h2>
-            <article>
-                <header>
+            <section class="skills">
+                <h2>Skills</h2>
+                <article>
                     <h3>Overview</h3>
-                </header>
-                <p>
-                    I possess a diverse skill set in mobile app development, web development, and content creation. I have hands-on experience with React Native for building cross-platform mobile applications, with a focus on UI/UX design to create intuitive and user-friendly
-                    interfaces.
-                </p>
-            </article>
-            <article id="skill-table">
-                <header>
+                    <p>
+                        I possess a diverse skill set in mobile app development, web development, and content creation. I have hands-on experience with React Native for building cross-platform mobile applications, with a focus on UI/UX design to create intuitive and user-friendly
+                        interfaces.
+                    </p>
+                </article>
+                <article id="skill-table">
                     <h3>Technical Proficiency</h3>
-                </header>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Skill</th>
-                            <th>Proficiency</th>
-                            <th>Experience</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Python</td>
-                            <td>Advanced</td>
-                            <td>2 years</td>
-                        </tr>
-                        <tr>
-                            <td>HTML, CSS & JS</td>
-                            <td>Advanced</td>
-                            <td>1 years</td>
-                        </tr>
-                        <tr>
-                            <td>React</td>
-                            <td>Intermediate</td>
-                            <td>2 years</td>
-                        </tr>
-                        <tr>
-                            <td>Node.js</td>
-                            <td>Intermediate</td>
-                            <td>1 year</td>
-                        </tr>
-                        <tr>
-                            <td>MongoDB</td>
-                            <td>Basic</td>
-                            <td>6 months</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </article>
-        </section>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Skill</th>
+                                <th>Proficiency</th>
+                                <th>Experience</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Python</td>
+                                <td>Advanced</td>
+                                <td>2 years</td>
+                            </tr>
+                            <tr>
+                                <td>HTML, CSS & JS</td>
+                                <td>Advanced</td>
+                                <td>1 year</td>
+                            </tr>
+                            <tr>
+                                <td>React</td>
+                                <td>Intermediate</td>
+                                <td>2 years</td>
+                            </tr>
+                            <tr>
+                                <td>Node.js</td>
+                                <td>Intermediate</td>
+                                <td>1 year</td>
+                            </tr>
+                            <tr>
+                                <td>MongoDB</td>
+                                <td>Basic</td>
+                                <td>6 months</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/girma-enkuchile-714725338/ " target="_blank " rel="noopener noreferrer " aria-label="LinkedIn ">💼</a></li>
+                    <li><a href="https://github.com/GitRoarr " target="_blank " rel="noopener noreferrer " aria-label="GitHub ">💻</a></li>
+                    <li><a href="https://t.me/mariamin211 " target="_blank " rel="noopener noreferrer " aria-label="Telegram ">✉️</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2024 Girma E. All rights reserved.</p>
+        </footer>
 
-        <section class="download-cv">
-            <h2>Download CV</h2>
-            <p>
-                Click below to download my CV and explore my academic background, skills, and professional experiences.
-            </p>
-            <a href="resume/cv.pdf" download>Download My CV</a>
-        </section>
-    </main>
-    <footer>
-        <nav aria-label="Social Media Links">
-            <ul>
-                <li><a href="https://www.linkedin.com/in/girma-enkuchile-714725338/" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a></li>
-                <li><a href="https://github.com/GitRoarr" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a></li>
-                <li><a href="https://t.me/mariamin211" target="_blank" aria-label="Telegram"><i class="bx bxl-telegram"></i></a></li>
-            </ul>
-        </nav>
-        <p>&copy; 2024 Girma E. All rights reserved.</p>
-    </footer>
-</body>
+
+        <script src="./js/resume.js"></script>
+    </body>
 
 </html>

@@ -4,138 +4,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <title>About - Girma E.</title>
+    <link rel="stylesheet" href="./css/about.css">
 </head>
 
 <body>
-    <header>
-        <article class="logo">
-            <figure>
-                <img src="images/logo.jpg" width="200" height="200" alt="Girma">
-            </figure>
-            <h1>Girma E.</h1>
-        </article>
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
 
-        <nav class="nav-list">
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Resume.html">Resume</a></li>
-                <li><a href="Service.html">Services</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <header>
+        <div class="header-container">
+            <article class="logo">
+                <figure>
+                    <img src="images/logo.jpg" alt="Girma">
+                </figure>
+                <h1>Girma E.</h1>
+            </article>
+
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </header>
+
     <main>
         <section id="Bio">
             <h1>About Me</h1>
-            <aside>
-                <div class="bio-img">
-                    <img src="/src/images/logo.jpg" width="300" height="300" alt="about imaage">
+            <div class="bio-container">
+                <div class="bio-img-audio">
+                    <aside class="bio-img">
+                        <img src="images/logo.jpg" alt="Girma Enkuchile">
+                    </aside>
+                    <p>Listen to my self-introduction audio:</p>
+                    <audio controls>
+                        <source src="./audio/introduce-self.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
                 </div>
-            </aside>
-            <article class="bio-text">
-                <h2>Biography</h2>
-                <p>
-                    Hello, I’m <strong>Girma Enkuchile</strong>, born in 2004 in the beautiful town of <strong>Alem Ketema</strong>, North Shewa, Ethiopia. My childhood in this culturally rich and tightly-knit community instilled in me a love for learning
-                    and curiosity about the world. I began my academic journey at <strong>Arebegnoch Secondary School</strong> in Alem Ketema, where I laid a strong foundation in education. Completing my preparatory education in the 2022/2023 academic
-                    year was a proud milestone that opened doors to exciting opportunities.
-                </p>
-                <p>
-                    Currently, I’m pursuing a degree in <strong>software engineering</strong> at the <strong>Addis Ababa Institute of Technology (AAiT)</strong>, one of the top institutions in Ethiopia. My passion for <strong>technology</strong> drives
-                    me to explore innovative solutions in <strong>software development</strong>. I am committed to learning and applying my skills to solve real-world problems. Beyond academics, I am deeply passionate about <strong>community development</strong>                    and aim to contribute to the growth and progress of my country. I believe in lifelong learning and continually strive to grow both personally and professionally to make a meaningful impact in the field of technology and beyond.
-                </p>
-            </article>
-            <p>Listen to my self-introduction audio:</p>
-            <audio controls>
-                <source src="assets/audio/introduce-self.mp3" type="audio/mp3">
-                Your browser does not support the audio element.
-            </audio>
+
+                <article class="bio-text">
+                    <h2>Biography</h2>
+                    <p>
+                        Hello, I'm <strong>Girma Enkuchile</strong>, born in 2004 in the beautiful town of <strong>Alem Ketema</strong>, North Shewa, Ethiopia. My childhood in this culturally rich and tightly-knit community instilled in me a love for
+                        learning and curiosity about the world. I began my academic journey at <strong>Arebegnoch Secondary School</strong> in Alem Ketema, where I laid a strong foundation in education.
+                    </p>
+                    <p>
+                        Currently, I'm pursuing a degree in <strong>software engineering</strong> at the <strong>Addis Ababa Institute of Technology (AAiT)</strong>, one of the top institutions in Ethiopia. My passion for <strong>technology</strong> drives
+                        me to explore innovative solutions in <strong>software development</strong>. I am committed to learning and applying my skills to solve real-world problems.
+                    </p>
+                </article>
+            </div>
         </section>
 
         <section id="interests">
-            <h2>Interests</h2>
-
-            <article class="slider-container">
-                <h3>Explore My Interests</h3>
-
+            <h2 class="section-title">Interests</h2>
+            <div class="slider-container">
                 <div class="slider">
-                    <figure>
-                        <img src="images/coding.png" width="300" height="300" alt="Coding">
+                    <figure class="slide">
+                        <img src="images/coding.png" alt="Coding">
                         <figcaption>
                             <h3>Coding</h3>
                             <p>Passionate about solving complex problems and creating software solutions through programming. I enjoy building apps, automating tasks, and learning new programming languages.</p>
                         </figcaption>
                     </figure>
-                    <figure>
-                        <img src="images/cyper.jpg" width="300" height="300" alt="Cybersecurity">
+                    <figure class="slide">
+                        <img src="images/cyper.jpg" alt="Cybersecurity">
                         <figcaption>
                             <h3>Cybersecurity</h3>
                             <p>Focused on protecting digital systems and data from unauthorized access and cyberattacks. I strive to stay updated on the latest cybersecurity trends and solutions.</p>
                         </figcaption>
                     </figure>
-                    <figure>
-                        <img src="images/ai.png" width="300" height="300" alt="Artificial Intelligence">
+                    <figure class="slide">
+                        <img src="images/ai.png" alt="Artificial Intelligence">
                         <figcaption>
                             <h3>Artificial Intelligence</h3>
                             <p>Exploring the cutting-edge field of AI, I aim to develop intelligent systems that can enhance decision-making and automate complex processes in various industries.</p>
                         </figcaption>
                     </figure>
                 </div>
-
-                <button class="prev">&#10094;</button>
-                <button class="next">&#10095;</button>
-            </article>
+                <button class="slider-btn prev-btn" aria-label="Previous slide">←</button>
+                <button class="slider-btn next-btn" aria-label="Next slide">→</button>
+                <div class="slider-nav"></div>
+            </div>
         </section>
 
-
         <section id="hobbies">
-            <h2>Hobbies</h2>
-            <article class="slider-container">
-                <h3>My Favorite Hobbies</h3>
+            <h2 class="section-title">Hobbies</h2>
+            <div class="slider-container">
                 <div class="slider">
-                    <figure>
-                        <video width="300" height="200" controls>
-                            <source src="assets/videos/football.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <figcaption>I’m passionate about football, whether it's playing or watching. I appreciate the teamwork, physical challenge, and strategy that come with the sport.</figcaption>
-                    </figure>
-
-                    <figure>
-                        <video width="300" height="200" controls>
-                            <source src="assets/videos/gym.mp4" type="video/mp4">
+                    <figure class="slide">
+                        <video controls>
+                            <source src="./videos/football.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                         <figcaption>
-                            I’m dedicated to working out at the gym to keep myself fit and healthy. I thrive on the physical challenges and the commitment needed to improve my strength.
+                            <h3>Football</h3>
+                            <p>I'm passionate about football, whether it's playing or watching. I appreciate the teamwork, physical challenge, and strategy that come with the sport.</p>
                         </figcaption>
                     </figure>
-
-                    <figure>
-                        <video width="300" height="200" controls>
-                            <source src="assets/videos/reading.mp4" type="video/mp4">
+                    <figure class="slide">
+                        <video controls>
+                            <source src="./videos/gym.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
-                        <figcaption>I have a strong interest in reading books as a way to expand my knowledge and stimulate my mind. I enjoy exploring new ideas, perspectives, and cultures, which helps me grow personally and creatively.</figcaption>
+                        <figcaption>
+                            <h3>Gym</h3>
+                            <p>I'm dedicated to working out at the gym to keep myself fit and healthy. I thrive on the physical challenges and the commitment needed to improve my strength.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="slide">
+                        <video controls>
+                            <source src="./videos/reading.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <figcaption>
+                            <h3>Reading</h3>
+                            <p>I have a strong interest in reading books as a way to expand my knowledge and stimulate my mind. I enjoy exploring new ideas, perspectives, and cultures.</p>
+                        </figcaption>
                     </figure>
                 </div>
-                <button class="prev">&#10094;</button>
-                <button class="next">&#10095;</button>
-            </article>
+                <button class="slider-btn prev-btn" aria-label="Previous slide">←</button>
+                <button class="slider-btn next-btn" aria-label="Next slide">→</button>
+                <div class="slider-nav"></div>
+            </div>
         </section>
     </main>
+
     <footer>
-        <nav aria-label="Social Media Links">
+        <nav>
             <ul>
-                <li><a href="https://www.linkedin.com/in/girma-enkuchile-714725338/" target="_blank" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a></li>
-                <li><a href="https://github.com/GitRoarr" target="_blank" aria-label="GitHub"><i class="bx bxl-github"></i></a></li>
-                <li><a href="https://t.me/mariamin211" target="_blank" aria-label="Telegram"><i class="bx bxl-telegram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/girma-enkuchile-714725338/ " target="_blank " rel="noopener noreferrer " aria-label="LinkedIn ">💼</a></li>
+                <li><a href="https://github.com/GitRoarr " target="_blank " rel="noopener noreferrer " aria-label="GitHub ">💻</a></li>
+                <li><a href="https://t.me/mariamin211 " target="_blank " rel="noopener noreferrer " aria-label="Telegram ">✉️</a></li>
             </ul>
         </nav>
         <p>&copy; 2024 Girma E. All rights reserved.</p>
     </footer>
+    <script src="./js/about.js"></script>
+
+
+
 </body>
 
 </html>
